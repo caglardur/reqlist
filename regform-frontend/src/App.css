@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.myModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.table tbody tr {
+  animation-duration: 0.5s;
+  animation-name: opacityEffect;
+}
+
+@keyframes opacityEffect {
+  from {
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+  }
+
+  to {
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+.hidePassword {
+  cursor: pointer;
+}
